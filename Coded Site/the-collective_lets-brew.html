@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Collective Coffee Roasters &amp; Bar</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/general-styles.css">
+        <link rel="stylesheet" type="text/css" href="./css/nav-footer.css">
+        <link rel="stylesheet" type="text/css" href="./css/lets-brew.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <header id="site-nav">
+            <nav class="nav-container">
+                <div><a class="nav-items nav-item-push" href="the-collective_our-story.html">Our Story</a></div>
+                <div><a class="nav-items" href="the-collective_menu.html">Menu</a></div>
+                <div id="nav-logo"><a href="the-collective_home.html"><img src="./assets/the-collective-logo-blk.png" alt="The Collective Logo"></a></div>
+                <div><a class="nav-items nav-item-push active-page" href="the-collective_lets-brew.html">Let's Brew</a></div>
+                <div><a class="nav-items" href="the-collective_contact.html">Contact</a></div>
+            </nav>
+        </header>
+        <!-- End of Navigation Bar -->
+
+        <!-- Let's Brew Hero -->
+        <section id="lets-brew-hero">
+            <h1 class="white">Let's Brew</h1>
+        </section>
+        
+        <!-- Class Menu Navigation -->
+        <nav>
+            <ul class="menu-nav menu-nav-items">
+                <li><a href="#">Coffee Brewing 101</a></li>
+                <li><a href="#">Espresso Essentials</a></li>
+                <li><a href="#">Latte Art</a></li>
+            </ul>
+        </nav>
+
+        <!-- Class Information -->
+        <section id="class-info-container">
+            <div class="two-img-collage">
+                <div class="img-big"><img src="./images/table.png" alt="Table"></div>
+                <div class="img-sml dropshadow"><img src="./images/cheers-cup.png" alt="Cheers to coffee!"></div>
+            </div>
+
+            <div class="left-align-content class-info">
+                <h1><span class="heading-line">Latte Art</span></h1>
+                <p>Ever wondered how your local barista makes stunning works of latte art? Now it’s your turn! Learn the basics and techniques in pouring the perfect latte art taught by our team of professional baristas.</p>
+                <br>
+                <p>This class will cover the following topics:</p>
+                <ul class="class-list">
+                    <li>An overview on espresso beans and milk textures</li>
+                    <li>How to steam the perfect milk</li>
+                    <li>Hands-on practice of steaming milk and pouring <span>various latte art designs</span></li>
+                    <li>Additional latte art tips &amp; tricks</li>
+                </ul>
+
+                <h4 class="duration">Duration: 2.5 hours</h4>
+                <h3 class="class-price">$90</h3>
+            </div>
+
+        </section>
+
+        <!-- Register Now Form -->
+        <section id="form-container">
+            <div id="register-form" class="dropshadow" >
+                <div class="form-head"><h1 class="white">Register Now!</h1></div>
+
+                <form id="class-register-form"  action="#" method="POST">
+                    <h5>Please Select a Date:</h5>
+                    <input type="date" name="date">
+                    <div id="calendar">
+                        <div class="calendar month">
+                            <ul>
+                                <li class="prev-arrow">&#10094;</li>
+                                <li class="next-arrow">&#10095;</li>
+                                <li><h4>December 2018</h4></li>
+                            </ul>
+                        </div>
+                        <ul class="calendar weekdays">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="calendar days">
+                            <li class="prev-month-day">25</li>
+                            <li class="prev-month-day">26</li>
+                            <li class="prev-month-day">27</li>
+                            <li class="prev-month-day">28</li>
+                            <li class="prev-month-day">29</li>
+                            <li class="prev-month-day">30</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li><span class="current-day">7</span></li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li>31</li>
+                        </ul>
+                    </div>
+
+                    <h5>Please Select a Time:</h5>
+                    <select name="time">
+                        <option value="12:00PM">12:00PM</option>
+                        <option value="4:00PM">4:00PM</option>
+                        <option value="8:00PM">8:00PM</option>
+                    </select>
+                    <br>
+
+                    <h5>Number of Attendees:</h5>
+                    <input type="number" name="attendees" min="1" max="20" step="1" value="1">
+                    <br>
+
+                    <h5>Please Fill in Your Information</h5><span class="required-note">*All fields are required</span>
+                    <br>
+                    <input class="input-box" type="text" name="firstname" placeholder="First Name">
+                    <input class="input-box no-left-margin"  type="text" name="lastname" placeholder="Last Name">
+                    <input class="input-box"  type="email" name="email" placeholder="Email Address">
+                    <input class="input-box"  type="text" name="address1" placeholder="Address 1">
+                    <input class="input-box"  type="text" name="address2" placeholder="Address 2">
+                    <input class="input-box"  type="text" name="city" placeholder="City">
+                    <input class="input-box no-left-margin"  type="text" name="postalcode" placeholder="Postal Code">
+                    <input class="input-box no-left-margin"  type="text" name="province" placeholder="Province">
+                    <input class="input-box no-left-margin"  type="text" name="country" placeholder="Country">
+                    
+                    <h5 class="comment-head">If there is additional attendees, please list their names:</h5>
+                    <textarea rows="6" cols="110" name="comment" form="class-register-form"></textarea>
+                    
+                    <h5>How did you hear about us?</h5>
+                    <select name="feedback">
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="friends">Friends</option>
+                        <option value="google">Google</option>
+                    </select>
+                
+                    <input type="submit" name="submit" value="Proceed to Payment" class="pay-green-btn btn-text white">
+                </form>
+            </div>
+        </section>
+        
+        <!-- Site Footer -->
+        <footer id="site-footer-container">
+            <div>
+                <img id="footer-logo" src="./assets/the-collective-logo-wht.png" alt="The Collective Logo">
+
+                <ul class="footer-nav footer-text" id="footer-nav-push">
+                    <li><a href="the-collective_home.html">Home</a></li>
+                    <li><a href="the-collective_our-story.html">Our Story</a></li>
+                    <li><a href="the-collective_menu.html">Menu</a></li>
+                    <li class="no-bottom-margin"><a href="the-collective_lets-brew.html">Let's Brew</a></li>
+                </ul>
+                <ul class="footer-nav footer-text">
+                    <li><a href="the-collective_lets-brew.html">Brew Guide</a></li>
+                    <li><a href="the-collective_lets-brew.html">Classes</a></li>
+                    <li><a href="the-collective_contact.html">Career</a></li>
+                    <li class="no-bottom-margin"><a href="the-collective_contact.html">Contact</a></li>
+                </ul>
+
+                <div id="stay-connected">
+                    <h5 class="footer-text">Stay Connected</h5>
+                    <form id="stay-connected-form" action="#" method="POST">
+                        <input type="email" name="email" placeholder="Email Address">
+                        <input type="submit" name="submit" value="Submit" class="sml-green-btn btn-text white">
+                    </form>
+                    <div class="sm-icons-white">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="assets/ig-icon.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="assets/fb-icon.png" alt="Facebook"></a>
+                        <a href="https://twitter.com/" target="_blank"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Site Footer -->
+    </body>
+</html>

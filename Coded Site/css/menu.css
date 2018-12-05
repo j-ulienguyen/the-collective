@@ -1,0 +1,218 @@
+/************************************
+              MENU HERO
+***********************************/
+#menu-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Hero Image */
+    background: linear-gradient(rgba(26, 26, 26, 0.4),rgba(26, 26, 26, 0.6)), url(../images/menu-hero.jpg); /* Note: Path is relative to CSS file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 47%;
+
+    height: 500px;
+}
+
+
+/************************************
+           MENU NAVIGATION
+***********************************/
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+
+.menu-nav-items {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 20pt;
+    letter-spacing: 0.075em; /* Tracking of 75 */
+    text-transform: uppercase;
+    list-style: none;
+}
+
+ul.menu-nav-items li {
+    border-right: 2px solid #e6e6e5;
+    padding: 0 30px;
+}
+
+        ul.menu-nav-items li:last-child {border-right: none;}
+        ul.menu-nav-items li a:hover {color: #c3996b;}
+
+
+/************************************
+            MENU CONTENT
+***********************************/
+#menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    height: 1100px;
+
+    margin: 0 auto;
+}
+
+/* Limit length of menu content */
+.left-align-content {
+    width: 50%;
+}
+
+/* Reposition menu content upwards */
+#menu-position {
+    position: relative;
+    bottom: 20px;
+}
+
+.size {
+    color: #c3996b;
+    font-size: 20pt;
+    text-align: center;
+    width: 42px;
+
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+
+.menu-item {
+    display: inline-block;
+    width: 100%;
+
+    margin-bottom: 40px;
+}
+
+        .price {
+            font-size: 20pt;
+            text-align: center;
+            width: 40px;
+
+            float: right;
+            margin-left: 30px;
+        }
+
+        .menu-item-head {
+            display: inline-block;
+
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 20pt;
+            font-style: italic;
+            text-transform: capitalize;
+            color: #1a1a1a;
+        }
+
+        /* Limit length of menu item description */
+        .menu-item-description {
+            width: 70%;
+        }
+
+
+.three-img-collage {
+    /* border: 2px solid black; */
+    width: 650px;
+    height: 700px;
+}
+
+        /* Back image - 1 of 3 */
+        .three-img-collage
+        .img-back {
+            position: relative;
+            left: 100px;
+            z-index: -99;
+
+            width: 400px;
+            height: 550px;
+            overflow: hidden;
+        }
+
+                /* Back image - Resize and position */
+                .three-img-collage
+                .img-back img {
+                    position: relative;
+                    bottom: 180px;
+                    right: 60px;
+
+                    width: 130%;
+                    height: auto;
+                }
+
+
+        /* Mid image - 2 of 3 */
+        .three-img-collage
+        .img-mid {
+            position: relative;
+            bottom: 300px;
+            left: 375px;
+            z-index: 50;
+
+            width: 275px;
+            height: 350px;
+            overflow: hidden;
+        }
+
+                /* Mid image - Resize and position */
+                .three-img-collage
+                .img-mid img {
+                    width: 100%;
+                    height: auto;
+
+                    position: relative;
+                    bottom: 50px;
+                }
+
+
+        /* Front image - 3 of 3 */
+        .three-img-collage
+        .img-front {
+            position: relative;
+            bottom: 500px;
+            z-index: 99;
+
+            width: 425px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+                /* Front image - Resize and position */
+                .three-img-collage
+                .img-front img {
+                    position: relative;
+                    bottom: 280px;
+
+                    width: 100%;
+                    height: auto;
+                }
+
+
+/************************************
+              GALLERY
+***********************************/
+#gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Gallery - Section Image */
+    background: linear-gradient(rgba(26, 26, 26, 0.4),rgba(26, 26, 26, 0.6)), url(../images/gallery-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 71%;
+
+    width: 100%;
+    height: 300px;
+
+    margin-top: 160px;
+}

@@ -1,0 +1,134 @@
+/************************************
+         NAVIGATION STYLING
+************************************/
+#site-nav {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 225px;
+
+    background-color: white;
+    text-align: center;
+}
+
+#nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 400px;
+    position: relative;
+    top: -10px;
+    /* border: 1px solid black; */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 20pt;
+    letter-spacing: 0.075em; /* Tracking of 75 */
+    text-transform: uppercase;
+
+    margin-top: 87.5px;
+}
+
+        a.nav-items:hover {
+            border-bottom: 3px solid #c3996b;
+            padding-bottom: 5px;
+        }
+
+        .nav-item-push {
+            /* Pushes nav item 2 & 4 outwards */
+            margin-right: 70px;
+        }
+
+        .active-page {
+            border-bottom: 3px solid #c3996b;
+            padding-bottom: 5px;
+        }
+
+
+/************************************
+            FOOTER STYLING
+************************************/
+#site-footer-container {
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+#site-footer-container > div {
+    /* Footer content is contained within this space and centered */
+    width: 80%;
+    height: 260px;
+    margin: 0 auto;
+}
+
+
+#footer-logo {
+    /* Scaling logo down */
+    width: 20%;
+    height: auto;
+    float: left;
+    
+    margin-right: 196px;
+    margin-top: 80px;
+}
+
+.footer-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 20pt;
+    letter-spacing: 0.075em; /* Tracking of 75 */
+    text-transform: uppercase;
+}
+        h5.footer-text {color: white;}
+
+.footer-nav {
+    float: left;
+    margin-top: 43.5px;
+}
+        #footer-nav-push {margin-right: 80px;}
+        ul.footer-nav li {margin-bottom: 15px;}
+
+        .footer-text a {color: white;}
+        .footer-text a:visited {color: white;}
+        .footer-text a:hover, a:active {color: #c3996b;}
+        .footer-text a:active {color: #c3996b;}
+
+#stay-connected {
+    float: right;
+    margin-top: 43.5px;
+}
+
+        #stay-connected-form {
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        #stay-connected-form input[name="email"] {
+            /* Sizing of email input field */
+            width: 22em;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+
+            margin-right: 5px;
+        }
+
+        #stay-connected-form input[placeholder="Email Address"] {
+            /* Push placeholder text to the right */
+            padding-left: 20px;
+        }

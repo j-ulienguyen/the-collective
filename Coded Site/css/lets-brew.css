@@ -1,0 +1,371 @@
+/************************************
+           LET'S BREW HERO
+***********************************/
+#lets-brew-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Hero Image */
+    background: linear-gradient(rgba(26, 26, 26, 0.4),rgba(26, 26, 26, 0.6)), url(../images/lets-brew-hero.jpg); /* Note: Path is relative to CSS file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 55%;
+
+    height: 500px;
+}
+
+
+/************************************
+        CLASS MENU NAVIGATION
+***********************************/
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 75px;
+    margin-bottom: 10px;
+}
+
+.menu-nav-items {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 20pt;
+    letter-spacing: 0.075em; /* Tracking of 75 */
+    text-transform: uppercase;
+    list-style: none;
+}
+
+ul.menu-nav-items li {
+    border-right: 2px solid #e6e6e5;
+    padding: 0 30px;
+}
+
+        ul.menu-nav-items li:last-child {border-right: none;}
+        ul.menu-nav-items li a:hover {color: #c3996b;}
+
+
+
+/************************************
+           CLASS INFORMATION
+***********************************/
+#class-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    height: 950px;
+
+    margin: 0 auto;
+}
+
+.two-img-collage {
+    /* border: 2px solid black; */
+    width: 650px;
+    height: 700px;
+}
+
+        /* Big image - 1 of 2 */
+        .two-img-collage
+        .img-big {
+            width: 500px;
+            height: 550px;
+            overflow: hidden;
+        }
+
+        /* Big image - Resize and position */
+        .two-img-collage
+        .img-big img {
+            position: relative;
+            bottom: 110px;
+
+            width: 100%;
+            height: auto;
+        }
+
+        /* Small image - 2 of 2 */
+        .two-img-collage
+        .img-sml {
+            position: relative;
+            bottom: 275px;
+            left: 225px;
+            z-index: 99;
+
+            width: 425px;
+            height: 425px;
+            overflow: hidden;
+}
+
+        /* Small image - Resize and position */
+        .two-img-collage
+        .img-sml img {
+            position: relative;
+            bottom: 145px;
+            right: 20px;
+
+            width: 105%;
+            height: auto;
+        }
+
+.left-align-content {width: 50%;}
+
+.class-info {
+    position: relative;
+    top: -30px;
+}
+
+    .duration {
+        margin: 30px 0 10px 0;
+        letter-spacing: 0.025em;
+    }
+    .class-price {
+        font-style: normal;
+        font-weight: 600;
+    }
+
+ul.class-list li {
+    list-style: none;
+    width: 80%;
+    margin-left: 30px;
+}
+        /* Change bullet to colored square */
+        ul.class-list li:before {
+            content: "■";
+            color: #c3996b;
+            margin-right: 30px;
+        }
+
+        /* Pushes list item text to the right */
+        ul.class-list li span {margin-left: 45px;}
+
+
+/************************************
+         REGISTER NOW FORM
+***********************************/
+#form-container {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.form-head {
+    /* Black header portion */
+    background-color: #1a1a1a;
+    width: 100%;
+
+    padding: 30px 0;
+    text-align: center;
+
+    border-radius: 15px 15px 0 0;
+}
+
+#register-form {
+    margin: 0 auto;
+
+    border-radius: 15px;
+    border-left: 1px solid #e6e6e5;
+
+    width: 60%;
+    height: auto;
+}
+
+#class-register-form h5 {
+    /* All headers in form */
+    display: inline-block;
+    
+    margin-right: 5px;
+    margin-left: 175px;
+}
+
+span.required-note {
+    /* All fields are required - note */
+    font-size: 11pt;
+    color: #1a1a1a;
+    margin-left: 10px;
+}
+
+#class-register-form .input-box {
+    /* Sizing of input box */
+    /* width: 200px; */
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e5;
+
+    margin-top: 10px;
+    margin-right: 5px;
+
+    margin-left: 175px; /* Push input box to the right */
+    padding-left: 10px; /* Push placeholder text to the right */
+}
+
+#class-register-form input[name="date"] {
+    /* Date input */
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e5;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#class-register-form select[name="time"] {
+    /* Time input */
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e5;
+
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#class-register-form input[name="attendees"] {
+    /* Number of Attendees input */
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e5;
+
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+#class-register-form input[name="firstname"],
+#class-register-form input[name="lastname"] {
+    /* Half length input - Names */
+    width: 34.25%;
+}
+
+#class-register-form input[name="email"],
+#class-register-form input[name="address1"],
+#class-register-form input[name="address2"] {
+    /* Full length input - Email, Address */
+    width: 69.5%;
+}
+
+#class-register-form input[name="city"],
+#class-register-form input[name="country"] {
+    /* City and Country */
+    width: 23.25%;
+}
+
+#class-register-form input[name="postalcode"],
+#class-register-form input[name="province"] {
+    /* Postal Code and Province */
+    width: 10%;
+}
+
+.comment-head {
+    /* Additional Comments */
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#class-register-form textarea[name="comment"] {
+    /* Additional Comments */
+    border-radius: 5px;
+    border: 1px solid #e6e6e5;
+
+    margin-left: 175px;
+    margin-bottom: 20px;
+}
+
+select[name="feedback"] {
+    /* Dropdown - Feedback */
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e5;
+
+    margin-bottom: 60px;
+    padding-left: 10px;
+}
+
+.pay-green-btn {
+    /* Styling for green payment button can be found in general-styles.css  */
+    margin-left: 430px;
+    margin-bottom: 60px;
+}
+
+
+/************************************
+        CSS CALENDAR - In Form
+***********************************/
+.calendar {margin: 0 auto;}
+.calendar ul {list-style: none;}
+
+.month {
+    background-color: #c3996b;
+    color: white;
+    text-align: center;
+
+    width: 70%;
+    padding: 35px 30px;
+}
+
+        /* Styling for Month heading */
+        .month h4 {
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        /* Position month arrows */
+        .month .prev-arrow {float: left;}
+        .month .next-arrow {float: right;}
+
+.weekdays {
+    background-color: #e6e6e5;
+    color: #1a1a1a;
+
+    width: 70%;
+    padding: 20px 0;
+
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 15pt;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+        .weekdays li {
+            display: inline-block;
+            width: 100px;
+        }
+
+.days {
+    font-size: 15pt;
+    background-color: #F2F2F2;
+    color: #1a1a1a;
+
+    width: 70%;
+    padding: 15px 0;
+}
+        /* Previous days in the month is a light gray */
+        .prev-month-day {color: #CCCCCC;}
+
+        .days li {
+            display: inline-block;
+            text-align: center;
+
+            width: 100px;
+            padding: 10px 0;
+            /* border: 2px black solid; */
+
+            position: relative;
+            left: 30px;
+        }
+
+        /* Current day - Green box */
+        .days li .current-day {
+            color: white;
+            background-color: #5eb065;
+            padding: 5px 10px;
+        }

@@ -1,0 +1,268 @@
+/************************************
+             GLOBAL STYLES
+************************************/
+/* Reset box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* No Margin Rules */
+.no-right-margin {margin-right: 0 !important;}
+.no-left-margin {margin-left: 0 !important;}
+.no-top-margin {margin-top: 0 !important;}
+.no-bottom-margin {margin-bottom: 0 !important;}
+
+/* Primary Colours */
+.brown {color: #c3996b;}
+.black {color: #1a1a1a;}
+.white {color: white;}
+
+/* Secondary Colours */
+.light-gray {color: #e6e6e5;}
+.dark-gray {color: #333333;}
+.green {color: #5eb065;}
+
+/* Text Styling Rules*/
+.uppercase {text-transform: uppercase;}
+
+
+/* Drop Shadow Effect*/
+.dropshadow {box-shadow: 7px 7px 8px rgba(0,0,0,0.2);}
+
+
+/************************************
+            FONTS STYLING
+************************************/
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,500,500i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+/* Barlow Condensed --> 400 - Regular, 500 - Medium, 600 - Semi-bold */
+/* Lato --> 300 - Light, 400 - Regular, 700 - Bold, 900 - Black */
+/* Open Sans --> 700 - Bold */
+
+body {
+    /* Body Copy */
+    font-family: Lato, sans-serif;
+    font-weight: 300; /* Light */
+    font-size: 18pt;
+    color: #1a1a1a;
+}
+
+
+/************************************
+          HEADING STYLING
+************************************/
+h1, h2, h3, h4, h5, h6 {font-family: 'Barlow Condensed', sans-serif;}
+
+h1 {
+    /* Main Headings */
+    font-size: 55pt;
+    font-weight: 600; /* Semi-bold */
+    text-transform: uppercase;
+}
+
+        /* Allows brown line to translate with this as reference */
+        .heading-line, .heading-line-mid {
+            position: relative;
+            line-height: 2.25;
+        }
+
+        /* Brown line NEXT to heading */
+        .heading-line:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform:translateX(35%);
+
+            border: 1.5px solid #c3996b;
+            width: 100px;
+        }
+
+        /* Brown line CENTERED under heading */
+        .heading-line-mid:after {
+            content: "";
+            position: absolute;
+            top: 115%;
+            left: 50%;
+            transform:translateX(-50%);
+
+            border: 1.5px solid #c3996b;
+            width: 100px;
+        }
+
+h2 {
+    /* Subheading 1 */
+    font-size: 32pt;
+    font-weight: 600; /* Semi-bold */
+    text-transform: capitalize;
+}
+
+h3 {
+    /* Subheading 2, Quotes */
+    font-size: 32pt;
+    font-weight: 400; /* Regular */
+    font-style: italic;
+    color: #c3996b;
+}
+
+.subhead-line-mid {
+    /* Allows brown line to translate with this as reference */
+    position: relative;
+    line-height: 3;
+}
+
+        .subhead-line-mid:after {
+            /* Brown line CENTERED under subheading */
+            content: "";
+            position: absolute;
+            top: 115%;
+            left: 50%;
+            transform:translateX(-50%);
+
+            border: 1.5px solid #c3996b;
+            width: 100px;
+        }
+
+
+/************************************
+            LINKS STYLING
+************************************/
+a {text-decoration: none;}
+
+a:link {color: #1a1a1a;}
+
+p a:link, a:visited {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+p a:hover, p a:active {
+    color: #c3996b;
+    text-decoration: none;
+}
+
+
+/************************************
+            BUTTON STYLING
+************************************/
+.btn-text {
+    cursor: pointer;
+    font-family: 'Open Sans', 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    letter-spacing: 0.05em; /* Tracking of 75 */
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3;
+}
+
+/* Brown fill button */
+.brown-btn {
+    display: inline-block;
+
+    background-color: #c3996b;
+    width: 210px;
+    height: 60px;
+
+    border: 2px solid #c3996b;
+    border-radius: 5px;
+}
+
+        .brown-btn:hover {
+            background-color: white;
+            color: #c3996b;
+            
+            width: 210px;
+            height: 60px;
+        }
+
+        /* Brown button link styling */
+        .brown-btn a {color: white;}
+        .brown-btn a:hover {color: #c3996b;}
+
+/* Green fill button */
+.green-btn {
+    display: inline-block;
+
+    background-color: #5eb065;
+    width: 210px;
+    height: 60px;
+
+    border: 2px solid #5eb065;
+    border-radius: 5px;
+}
+
+        .green-btn:hover {
+            background-color: white;
+            color: #5eb065;
+        }
+
+        /* Green button link styling */
+        .green-btn a {color: white;}
+        .green-btn a:hover {color: #5eb065;}
+
+/* Payment green fill button */
+.pay-green-btn {
+    display: inline-block;
+
+    background-color: #5eb065;
+    width: 300px;
+    height: 60px;
+
+    border: 2px solid #5eb065;
+    border-radius: 5px;
+}
+
+        .pay-green-btn:hover {
+            background-color: white;
+            color: #5eb065;
+        }
+
+        /* Green button link styling */
+        .pay-green-btn a {color: white;}
+        .pay-green-btn a:hover {color: #5eb065;}
+
+   
+/* Small green fill button with font adjustments */
+.sml-green-btn {
+    display: inline-block;
+
+    background-color: #5eb065;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+
+    font-size: 12pt;
+    line-height: 1.75;
+}
+
+        /* Hover styling for SUBMIT button */
+        input.sml-green-btn[name="submit"]:hover {
+            border: 2px solid #c3996b; 
+            background-color: #c3996b;
+        }
+
+
+
+/* White outline button */
+.white-btn {
+    display: inline-block;
+
+    border: 2px solid white;
+    width: 210px;
+    height: 60px;
+    border-radius: 5px;
+    color: white;
+}
+
+        .white-btn:hover {
+            background-color: white;
+            color: #1a1a1a;
+        }
+
+        /* White button link styling */
+        .white-btn a {color: white;}
+        .white-btn a:hover {color: #1a1a1a;}

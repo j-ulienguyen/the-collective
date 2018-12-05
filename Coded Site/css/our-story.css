@@ -1,0 +1,158 @@
+/************************************
+            OUR STORY HERO
+***********************************/
+#our-story-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Hero Image */
+    background: linear-gradient(rgba(26, 26, 26, 0.4),rgba(26, 26, 26, 0.6)), url(../images/our-story-hero.jpg); /* Note: Path is relative to CSS file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 75%;
+
+    height: 500px;
+}
+
+
+/************************************
+            MID SECTION
+***********************************/
+#mid-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+.bean-bag-sketch {
+    /* Bean bag sketch offset on page */
+    background-image: url(../assets/bean-bag-sketch.png);
+    background-repeat: no-repeat;
+    background-size: 28%;
+    background-position-x: -6%;
+    background-position-y: 30%;
+}
+
+.mid-align-content {
+    display: inline-block;
+    width: 42%;
+    text-align: center;
+    margin: 0 auto;
+
+    position: relative;
+    bottom: 20px;
+}
+
+
+/************************************
+            MID PAGE IMAGE
+***********************************/
+#mid-page-img {
+    background: linear-gradient(rgba(26, 26, 26, 0.4),rgba(26, 26, 26, 0.6)), url(../images/black-cups.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 65%;
+
+    width: 100%;
+    height: 275px;
+}
+
+
+/************************************
+              OUR STORY
+***********************************/
+#our-story-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    height: 950px;
+
+    margin: 0 auto;
+}
+
+.left-align-content {width: 50%;}
+
+.our-story h3 {margin-bottom: 40px;}
+
+.three-img-collage {
+    /* border: 2px solid black; */
+    width: 650px;
+    height: 700px;
+}
+
+        /* Back image - 1 of 3 */
+        .three-img-collage
+        .img-back {
+            position: relative;
+            left: 100px;
+            z-index: -99;
+
+            width: 400px;
+            height: 550px;
+            overflow: hidden;
+        }
+
+                /* Back image - Resize and position */
+                .three-img-collage
+                .img-back img {
+                    position: relative;
+                    bottom: 110px;
+
+                    width: 100%;
+                    height: auto;
+                }
+
+
+        /* Mid image - 2 of 3 */
+        .three-img-collage
+        .img-mid {
+            position: relative;
+            bottom: 300px;
+            left: 375px;
+            z-index: 50;
+
+            width: 275px;
+            height: 350px;
+            overflow: hidden;
+        }
+
+                /* Mid image - Resize and position */
+                .three-img-collage
+                .img-mid img {
+                    height: 100%;
+                    width: auto;
+
+                    position: relative;
+                    right: 80px;
+                }
+
+
+        /* Front image - 3 of 3 */
+        .three-img-collage
+        .img-front {
+            position: relative;
+            bottom: 500px;
+            z-index: 99;
+
+            width: 425px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+                /* Front image - Resize and position */
+                .three-img-collage
+                .img-front img {
+                    position: relative;
+                    bottom: 10px;
+                    right: 20px;
+
+                    width: 110%;
+                    height: auto;
+                }

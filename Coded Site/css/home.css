@@ -1,0 +1,284 @@
+/************************************
+                MAIN
+***********************************/
+#main-container {
+     background-color: lightblue;
+     width: 100%;
+}
+
+.home-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Hero Image */
+    background: linear-gradient(rgba(26, 26, 26, 0.4),rgba(26, 26, 26, 0.6)), url(../images/home-hero.jpg); /* Note: Path is relative to CSS file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 65%;
+
+    background-color:gray;
+    height: 600px;
+}
+
+.hero-logo {
+    position: relative;
+    top: -20px;
+}
+
+
+/************************************
+           CONTACT INFO BAR
+************************************/
+.contact-info-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: #1a1a1a;
+    height: 170px;
+}
+
+.contact-info {
+    /* border: 1px solid green; */
+    padding-top: 8px;
+    width: 14%;
+}
+
+.info-bar-head {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600; /* Semi-bold */
+    font-size: 20pt;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.info-bar-text {
+    font-weight: 400; /* Regular */
+    font-size: 15pt;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.hours-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 16pt;
+    color: white;
+    margin-left: 10px;
+}
+
+
+/************************************
+              OUR STORY
+***********************************/
+#our-story-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    height: 950px;
+
+    margin: 0 auto;
+}
+
+.two-img-collage {
+    /* border: 2px solid black; */
+    width: 650px;
+    height: 700px;
+}
+
+        /* Big image - 1 of 2 */
+        .two-img-collage
+        .img-big {
+            width: 500px;
+            height: 550px;
+            overflow: hidden;
+        }
+
+        /* Big image - Resize and position */
+        .two-img-collage
+        .img-big img {
+            position: relative;
+            bottom: 110px;
+
+            width: 100%;
+            height: auto;
+        }
+
+        /* Small image - 2 of 2 */
+        .two-img-collage
+        .img-sml {
+            position: relative;
+            bottom: 275px;
+            left: 225px;
+            z-index: 99;
+
+            width: 425px;
+            height: 425px;
+            overflow: hidden;
+}
+
+        /* Small image - Resize and position */
+        .two-img-collage
+        .img-sml img {
+            position: relative;
+            bottom: 145px;
+            right: 20px;
+
+            width: 105%;
+            height: auto;
+        }
+
+.left-align-content {width: 50%;}
+
+.our-story {
+    position: relative;
+    top: -30px;
+}
+.our-story > .brown-btn {margin-top: 35px;}
+
+
+/************************************
+                MENU
+***********************************/
+#menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Menu - Section Image */
+    background: linear-gradient(rgba(26, 26, 26, 0.4),rgba(26, 26, 26, 0.6)), url(../images/menu-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50%;
+
+    width: 100%;
+    height: 275px;
+}
+
+
+/************************************
+             LETS BREW
+***********************************/
+#lets-brew-container {
+    width: 80%;
+    height: 1250px;
+
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.mid-align-content {
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.brew-class-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+    margin-top: 120px;
+}
+
+.brew-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+        .brew-class-img {
+            width: 300px;
+            height: 350px;
+            overflow: hidden;
+
+            margin-bottom: 35px;
+        }
+
+        /* Coffee Brewing 101 */
+        .class-1 img {
+            width: 100%;
+            height: auto;
+
+            position: relative;
+            top: -30px;
+        }
+
+        /* Espresso Essentials */
+        .class-2 img {
+            height: 100%;
+            width: auto;
+
+            position: relative;
+            right: 130px;
+        }
+
+        /* Latte Art */
+        .class-3 img {
+            height: 110%;
+            width: auto;
+
+            position: relative;
+            right: 55px;
+        }
+
+.brew-class > h2 {margin-bottom: 20px;}
+.brew-class > p {margin-bottom: 35px;}
+
+
+/************************************
+      GET IN TOUCH / FOLLOW US
+***********************************/
+#contact-container {
+    background-color: lightcyan;
+    width: 100%;
+    height: 250px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Get In Touch - Section Image */
+    background: linear-gradient(rgba(26, 26, 26, 0.4),rgba(26, 26, 26, 0.6)), url(../images/contact-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50%;
+
+    float: left;
+
+    width: 50%;
+    height: 100%;
+}
+
+.contact-box h2 {margin-bottom: 5px;}
+
+.follow-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #c3996b;
+    float: left;
+
+    width: 50%;
+    height: 100%;
+}
+
+.sm-icons-white img {
+    margin-right: 5px;
+}
